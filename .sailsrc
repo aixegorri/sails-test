@@ -1,0 +1,14 @@
+{
+  "generators": {
+    "modules": {
+      "gulp": "sails-generate-gulp"
+    }
+  },
+  "_generatedWith": {
+    "sails": "1.0.1",
+    "sails-generate": "1.15.20"
+  },
+  "hooks": {
+    "grunt": false
+  }
+}
