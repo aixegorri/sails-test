@@ -5,14 +5,11 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
-    "sails": "^1.0.1",
-    "sails-hook-grunt": "^3.0.2",
-    "sails-hook-orm": "^2.0.0-16",
-    "sails-hook-sockets": "^1.4.0",
     "@sailshq/connect-redis": "^3.2.1",
-    "@sailshq/socket.io-redis": "^5.2.0",
     "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
     "async": "2.0.1",
+    "del": "^3.0.0",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-combine-mq": "^0.4.0",
@@ -24,7 +21,11 @@
     "gulp-uglify": "^1.0.1",
     "rimraf": "^2.5.1",
     "run-sequence": "^1.1.5",
-    "sails-hook-gulp": "0.0.1"
+    "sails": "^1.0.1",
+    "sails-hook-grunt": "^3.0.2",
+    "sails-hook-gulp": "0.0.1",
+    "sails-hook-orm": "^2.0.0-16",
+    "sails-hook-sockets": "^1.4.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
