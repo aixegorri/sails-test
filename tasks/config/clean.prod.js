@@ -7,12 +7,12 @@
  * sails project.
  *
  */
-var rimraf = require('rimraf');
+var del = require('del');
 module.exports = function(gulp, plugins, growl) {
   gulp.task('clean:dev', function(cb) {
-    return rimraf('.tmp/public', cb);
+    return del('.tmp/public', cb);
   });
   gulp.task('clean:build', function(cb) {
-    return rimraf('www', cb);
+    return del('www', cb);
   });
 };
