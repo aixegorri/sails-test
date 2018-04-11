@@ -25,7 +25,7 @@ module.exports = function(gulp, plugins, growl) {
       .pipe(plugins.sourcemaps.write())
       .pipe(gulp.dest('.tmp/public/styles/'))
       .pipe(plugins.livereload())
-      .pipe(plugins.if(growl, plugins.notify({ message: 'sass dev task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> CSS OK', onLast: true })));
   });
 
   gulp.task('sass:prod', function() {

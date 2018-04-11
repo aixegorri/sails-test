@@ -20,7 +20,7 @@ module.exports = function(gulp, plugins, growl) {
 
     return gulp.src(['./assets/**/*.!(scss)', '!assets/images{,/**}'])
       .pipe(gulp.dest('.tmp/public'))
-      .pipe(plugins.if(growl, plugins.notify({ message: 'Copy dev task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> Copy Task OK', onLast: true })));
   });
 
   gulp.task('copy:build', function() {

@@ -15,6 +15,6 @@ module.exports = function(gulp, plugins, growl) {
     return gulp.src(['./assets/**/*.!(scss)', '!assets/images{,/**}'])
       .pipe(plugins.changed('.tmp/public'))
       .pipe(gulp.dest('.tmp/public'))
-      .pipe(plugins.if(growl, plugins.notify({ message: 'Sync task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> Sync OK', onLast: true })));
   });
 };

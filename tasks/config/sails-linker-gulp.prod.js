@@ -44,7 +44,7 @@ module.exports = function(gulp, plugins, growl) {
       }))
       // Write modified files...
       .pipe(gulp.dest('.tmp/public/'))
-      .pipe(plugins.if(growl, plugins.notify({ message: 'sails-linker-gulp:devAssets task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> Linker Assets OK', onLast: true })));
   });
 
   // Insert JS, CSS and template dev links into HTML and HANDLEBARS files in the views folder
@@ -79,7 +79,7 @@ module.exports = function(gulp, plugins, growl) {
       }))
       // Write modified files...
       .pipe(gulp.dest('views/'))
-      .pipe(plugins.if(growl, plugins.notify({ message: 'sails-linker-gulp:devViews task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> Linker Views OK', onLast: true })));
   });
 
   // Insert relative JS, CSS and template dev links into HTML files in the tmp assets folder
@@ -114,7 +114,7 @@ module.exports = function(gulp, plugins, growl) {
       }))
       // Write modified files...
       .pipe(gulp.dest('.tmp/public/'))
-      .pipe(plugins.if(growl, plugins.notify({ message: 'sails-linker-gulp:devAssetsRelative task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> Linker Relative Assets OK', onLast: true })));
   });
 
   // Insert relative JS, CSS and template dev links into HTML and HANDLEBARS files in the views folder
@@ -149,7 +149,7 @@ module.exports = function(gulp, plugins, growl) {
       }))
       // Write modified files...
       .pipe(gulp.dest('views/'))
-      .pipe(plugins.if(growl, plugins.notify({ message: 'sails-linker-gulp:devViewsRelative task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> Linker Relative Views OK', onLast: true })));
   });
 
   // Insert JS, CSS and template production links into HTML files in the tmp assets folder
@@ -248,7 +248,7 @@ module.exports = function(gulp, plugins, growl) {
       }))
       // Write modified files...
       .pipe(gulp.dest('.tmp/public/'))
-      .pipe(plugins.if(growl, plugins.notify({ message: 'sails-linker-gulp:prodAssetsRelative task complete' })));
+      .pipe(plugins.if(growl, plugins.notify({ message: '> Linker Relative Assets OK', onLast: true })));
   });
 
   // Insert relative JS, CSS and template production links into HTML and HANDLEBARS files in the views folder
