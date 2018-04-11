@@ -7,11 +7,15 @@
 //  http://sass-guidelin.es/#architecture
 //-------------------------------------------------------------------
 
-// Utils
-//@import 'utils/variables';
-//@import 'utils/functions';
-//@import 'utils/mixins';
-//@import 'utils/placeholders';
+$media-queries-supported : true;
+
+
+// Core
+@import 'core/variables';
+@import 'core/functions';
+@import 'core/mixins';
+@import 'core/placeholders';
+@import 'core/icons';
 
 // Vendors
 //@import 'vendors/bootstrap';
@@ -42,3 +46,9 @@
 // Themes
 //@import 'themes/theme';
 //@import 'themes/admin';
+
+
+
+
+// Debug
+// @import "core/debug.scss";  // Utilizado para comprobar que el marcado HTML no contenga errores

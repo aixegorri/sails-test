@@ -3,7 +3,10 @@
 html,
 body {
   text-align: left;
-  font-size: 1em
+  font-size: 1em;
+  @include media-query-bp($bp4,min,width,screen) {
+		background-color: lightgrey;
+	}
 }
 
 html,
@@ -138,6 +141,9 @@ div.header {
   color: #fff;
   font-weight: 300;
   font-size: 2.5em;
+    @include media-query-bp($bp4,min,width,screen) {
+		font-size: 4em;
+	}
 }
 
 .header h3 {
@@ -301,7 +307,7 @@ div.links .link-list a li {
 }
 
 div.default-page {
-  min-width: 1200px;
+  // min-width: 1200px;
 }
 
 .pocket {
